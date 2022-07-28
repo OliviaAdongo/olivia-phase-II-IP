@@ -4,7 +4,8 @@ import './Input.css';
 
 const Input = ({setMessage, sendMessage, message })=>{
     return(
-    <form className="form">
+    <div>
+        <form className="form">
         <input
             className="input"
             type="text"
@@ -12,9 +13,10 @@ const Input = ({setMessage, sendMessage, message })=>{
             value={message}
             onChange={({ target: { value } }) => setMessage(value)}
             onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
-        />
-    <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
-  </form>
+         />
+        <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
+        </form>
+  </div>
 
     )
 }

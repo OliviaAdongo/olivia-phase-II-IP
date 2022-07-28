@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
+import { useLocation } from "react-router";
+
 import './Chat.css';
 import TextContainer from '../TextContainer/TextContainer';
 import Messages from '../Messages/Messages';
@@ -9,14 +11,19 @@ import Input from '../Input/Input';
 
 let socket;
 
-const Chat = ({ location }) => {
+const ENDPOINT = '';
+
+
+const Chat = () => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
+    const location = useLocation();
   
     useEffect(() => {
+      
       const { name, room } = queryString.parse(location.search);
   
       socket = io(ENDPOINT);

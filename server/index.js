@@ -2,8 +2,9 @@ const http = require('http');
 const express = require('express');
 const socketio = require('socket.io');
 const cors = require('cors');
-
+ 
 // dependencies initialized
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
 const router = require('./router');
 
@@ -49,4 +50,4 @@ io.on('connect', (socket) => {
     })
   });
   
-  server.listen(process.env.PORT || 3000, () => console.log(`Server has started.`));
+  server.listen(process.env.PORT || 3000, () => console.log(`Server has started in port.`));

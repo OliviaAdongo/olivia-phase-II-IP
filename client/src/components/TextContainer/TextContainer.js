@@ -3,11 +3,13 @@ import React from 'react';
 import './TextContainer.css';
 
 const TextContainer = ({ users }) => (
+
   <div className="textContainer">
     <div>
       <h1>Chatterly</h1>
+
     </div>
-    {
+    { 
       users
         ? (
           <div>
@@ -25,6 +27,7 @@ const TextContainer = ({ users }) => (
         )
         : null
     }
+    <button className='contacts'>Contacts</button>
   </div>
 );
 

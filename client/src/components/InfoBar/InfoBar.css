@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2979FF;
+    background-color: rgb(11, 34, 34);
     border-radius: 4px 4px 0 0;
     height: 60px;
     width: 100%;
-  }
+  } 
   .leftInnerContainer {
     flex: 0.5;
     display: flex;

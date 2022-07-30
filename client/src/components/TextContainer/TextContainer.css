@@ -1,9 +1,12 @@
 .textContainer {
     display: flex;
+    place-items: center;
+    background: rgb(11, 34, 34);;
     flex-direction: column;
     margin-left: 100px;
     color: white;
     height: 60%;
+    width: 350px;
     justify-content: space-between;
   }
   
@@ -30,7 +33,7 @@
       font-family: monospace;
       text-transform: uppercase;
       text-decoration: none;
-      background: #2979FF;
+      background: rgb(130, 93, 60);
       padding: 20px;
       border-radius: 5px;
       display: inline-block;

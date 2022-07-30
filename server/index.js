@@ -14,6 +14,8 @@ const io = socketio(server);
 
 app.use(cors());
 app.use(router);
+app.use(express.json()); //allow us to send and receive data from frontend to backend
+
 
 
 io.on('connect', (socket) => {

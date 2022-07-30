@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
 import { useLocation } from "react-router";
-
 import './Chat.css';
 import TextContainer from '../TextContainer/TextContainer';
 import Messages from '../Messages/Messages';
@@ -48,6 +47,7 @@ const Chat = () => {
       });
   }, []);
   
+  //send message event
     const sendMessage = (event) => {
       event.preventDefault();
   

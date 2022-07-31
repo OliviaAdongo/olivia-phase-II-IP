@@ -1,0 +1,22 @@
+.buttonCont{
+    
+    place-items: center;
+    background: rgb(11, 34, 34);;
+    margin: 0;
+    color: white;
+    height: 60%;
+    width: 350px;
+    justify-content: space-between;
+}
+.contacts{
+    color: #fff ;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(130, 93, 60);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+}
